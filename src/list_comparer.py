@@ -1,4 +1,8 @@
 class ListComparer:
+    """
+    A class that compares the average values of 2 lists.
+    """
+
     def __init__(self, list1, list2):
         """
         Initializes a new instance of the class.
@@ -32,7 +36,6 @@ class ListComparer:
 
         if avg1 > avg2:
             return "Первый список имеет большее среднее значение"
-        elif avg2 > avg1:
+        if avg2 > avg1:
             return "Второй список имеет большее среднее значение"
-        else:
-            return "Средние значения равны"
+        return "Средние значения равны"
